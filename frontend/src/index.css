@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.background1 {
+  background-image: url("./assets/images/back1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* overflow-y: scroll; */
+}
+.background2 {
+  background-image: url("./assets/images/back2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.background_cover {
+  background-image: url("./assets/images/back_cover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 0.75;  */
+
+}
+.background_seller1 {
+  background-image: url("./assets/images/sellerhompageimg1.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  background-size: 80%;
+}
+.background_seller2 {
+  background-image: url("./assets/images/sellerhompageimg2.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position-y: bottom;
+}
+#inputID::placeholder {
+  color: #BA9BCB;
+  opacity: 1;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
