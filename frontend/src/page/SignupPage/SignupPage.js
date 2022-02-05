@@ -43,7 +43,8 @@ const SignupPage = () => {
   };
   return (
     <div className=" background2">
-      <div className=" background_cover flex">
+      <div className=" background_cover"></div>
+      <div className="flex h-screen">
         <div className="absolute md:mt-[43px] ml-[45%] md:ml-[130px] xl:ml-[159px]">
           <a href='/' className="hidden md:flex font-bold text-3xl tracking-tight text-white">
             LOGO
@@ -58,7 +59,7 @@ const SignupPage = () => {
               <h1 className="text-white  text-2xl mb-3 flex items-center justify-center">
                 Create An Account
               </h1>
-              <div className="flex mb-3 items-center justify-center">
+              <div className="flex mb-3 lg:items-center justify-center">
                 <p className="text-white">Already an user?</p>&nbsp;&nbsp;
                 <a href="/login" className="text-red-600  hover:text-white">
                   Sign in

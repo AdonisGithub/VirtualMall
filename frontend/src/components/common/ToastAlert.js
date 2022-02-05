@@ -8,7 +8,7 @@ export const Toast = (title, message, type) => {
     insert: "top",
     container: "top-center",
     dismiss: {
-      duration: 100000,
+      duration: 1000,
     },
   });
 };

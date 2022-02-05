@@ -10,6 +10,10 @@ import {ResetPasswordRequestPage2} from "./page/ResetPasswordPage/ResetPasswordR
 import {ResetPasswordPage} from "./page/ResetPasswordPage/ResetPasswordPage";
 import { SellerHomePage } from './page/SellerHompage';
 import { SellerSignupPage } from './page/SellerSignupPage';
+import {ForgottenPasswordEmailPage}from"./page/ForgottenPasswordEmailPage/ForgottenPasswordEmailPage";
+import { WellcomeEmailPage } from './page/WellcomeEmailPage/WellcomEmailPage';
+import { ForgottenPasswordEmailAfter1Page } from './page/ForgottenPasswordEmailAfter1/ForgottenPasswordEmailAfter1Page';
+import { SellerSignupCongratuationsPage } from './page/SellerSignupCongratualtionsPage';
 import Example from "./page/exersise";
 
 function App() {
@@ -24,6 +28,10 @@ function App() {
           <Route exact path="/resetpassword" element={<ResetPasswordPage/>} />
           <Route exact path="/sellerhomepage" element={<SellerHomePage/>} />
           <Route exact path="/sellersignup" element={<SellerSignupPage/>} />
+          <Route exact path="/forgottenpasswordemail" element={<ForgottenPasswordEmailPage/>} />
+          <Route exact path="/wellcomeemail" element={<WellcomeEmailPage/>} />
+          <Route exact path="/forgottenpasswordemailafter1" element={<ForgottenPasswordEmailAfter1Page/>} />
+          <Route exact path="/sellersignupcongratulations" element={<SellerSignupCongratuationsPage/>} />
           <Route exact path="/exersise" element={<Example />} />
         </Routes>
         <Footer />

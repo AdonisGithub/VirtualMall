@@ -1,24 +1,25 @@
-import React from "react";
+import React,{useEffect} from "react";
+import { useNavigate } from "react-router-dom";
 import HumburgerMenu from "./humburgermenu";
 import {ContactUsModal} from "./ContactUsModal";
 const Header = () => {
-  // const navigate = useNavigate();
-  // const logoClick = () => {
-  //     navigate('/');
-  // }
-  // useEffect(() => {
-  //   window.onscroll = () => {
-  //     if (window.scrollY < 80) {
-  //       document.getElementById("nav").style.top = "0";
-  //     } else document.getElementById("nav").style.top = "-5rem";
-  //   };
-  // }, []);
+  const navigate = useNavigate();
+  const VendorClick = () => {
+      navigate('/sellerhomepage');
+  }
+  useEffect(() => {
+    window.onscroll = () => {
+      if (window.scrollY < 20) {
+        document.getElementById("nav").style.top = "0";
+      } else document.getElementById("nav").style.top = "-5rem";
+    };
+  },[]);
   return (
     <nav
         id="nav"
-        className=" flex absolute top-0  z-10 w-full p-6 bg-stone-800 2xl:h-32 lg:h-20 transition-[top] duration-300"
+        className=" flex absolute top-0  z-10 w-full p-6 bg-stone-800 bg-opacity-70 h-[79px] lg:h-[100px] l:h-[141px] transition-[top] duration-300"
       >
-        <div className="flex flex-row justify-between w-full pl-2 md:pl-20 ">
+        <div className="flex flex-row justify-between w-full pl-1 lg:pl-20">
           <div className="flex flex-row justify-start w-full">
             <div className="flex items-center">
               {/* <img src={logo} alt="logo"  className="cursor-pointer"  width={60} height={30} onClick={""}></img>                */}
@@ -26,7 +27,7 @@ const Header = () => {
                 LOGO
               </a>
             </div>
-            <div className="hidden md:flex">
+            <div className="hidden lg:flex">
               <a
                 href="/"
                 className="flex items-center px-4 py-2 text-white hover:text-red-600 ml-2 "
@@ -53,7 +54,7 @@ const Header = () => {
               </a>
             </div>
           </div>
-          <div className="md:hidden flex jutisfy-end gap-2">
+          <div className="flex lg:hidden jutisfy-end gap-2">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -72,8 +73,10 @@ const Header = () => {
             </svg>
             <HumburgerMenu />
           </div>
-          <div className="hidden md:flex flex-row md:w-6/12 gap-5 justify-center items-center">
-            <button className=" w-[150px]  2xl:w-[216px] 2xl:mt-3 h-9 2xl:h-[48px]  flex items-center justify-center border border-transparent hover:border-gray-200 text-white bg-[#ff0000] hover:bg-transparent rounded-md">
+          <div className="hidden lg:flex flex-row xs:w-6/12 gap-5 justify-center items-center">
+            <button className=" w-[150px]  xxl:w-[216px] xxl:h-[48px] h-9 flex items-center justify-center border border-transparent hover:border-gray-200 text-white bg-[#ff0000] hover:bg-transparent rounded-md"
+              onClick={VendorClick}
+            >
               Become a Vendor
             </button>
             <ContactUsModal/>

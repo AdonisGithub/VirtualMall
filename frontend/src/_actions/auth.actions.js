@@ -2,7 +2,7 @@ import { userConstants } from '../_constants';
 import { history } from '../_helpers';
 import axios from "axios";
 import { Toast } from "../components/common/ToastAlert";
-const API_URL = "http://localhost:8080";
+const API_URL = "http://165.232.157.54";
 
 
  export function register(registeruserdata) {

@@ -5,7 +5,7 @@ const SellerSignupPage = () => {
 
 
   return (
-      <div className="flex">
+      <div className="flex background_seller h-screen">
         <div className="absolute md:mt-[43px] ml-[45%] md:ml-[130px] xl:ml-[159px]">
           <a href='/' className="hidden md:flex font-bold text-3xl tracking-tight text-black">
             LOGO
@@ -22,7 +22,7 @@ const SellerSignupPage = () => {
               </h1>
               <div className="flex mb-3 items-center justify-center">
                 <p className="text-black">Already an user?</p>&nbsp;&nbsp;
-                <a href="/login" className="text-red-600  hover:text-black">
+                <a href="/sellerhomepage" className="text-red-600  hover:text-black">
                   Sign in
                 </a>
               </div>

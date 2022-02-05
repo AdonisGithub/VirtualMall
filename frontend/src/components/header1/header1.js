@@ -4,7 +4,7 @@ const Header1 = () => {
   return (
     <nav
       id="nav"
-      className=" flex absolute top-0  w-full p-6 bg-white 2xl:h-32 lg:h-24 transition-[top] duration-300"
+      className=" flex  top-0  w-full p-6 bg-white 2xl:h-32 lg:h-24"
     >
       <div className="flex flex-row justify-between w-full pl-2 md:pl-20 ">
         <div className="flex flex-row justify-start w-full">

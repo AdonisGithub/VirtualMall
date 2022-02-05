@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React, { useState} from "react";
+import { useDispatch} from "react-redux";
 import * as Actions from "../../_actions";
 import "react-phone-input-2/lib/style.css";
 //import { Toast } from "../../components/common/ToastAlert";
@@ -30,7 +30,8 @@ const LoginPage = () => {
 
   return (
     <div className="min-h-screen background2">
-      <div className=" min-h-screen background_cover flex">
+      <div className="background_cover"></div>
+      <div className=" min-h-screen  flex">
         <div className="absolute md:mt-[43px] ml-[45%] md:ml-[130px] xl:ml-[159px]">
           <a href='/' className="hidden md:flex font-bold text-3xl tracking-tight text-white">
             LOGO

@@ -13,15 +13,24 @@ code {
 }
 
 
-.background1 {
-  background-image: url("./assets/images/back1.jpg");
+.background_home {
+  background-image: url("./assets/images/home.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center;
   background-size: cover;
   /* overflow-y: scroll; */
 }
+
 .background2 {
   background-image: url("./assets/images/back2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.background_login {
+  background-image: url("./assets/images/login.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -31,22 +40,30 @@ code {
   background-image: url("./assets/images/back_cover.png");
   background-repeat: no-repeat;
   background-size: cover;
-  /* opacity: 0.75;  */
+   opacity: 0.7;  
 
 }
 .background_seller1 {
   background-image: url("./assets/images/sellerhompageimg1.png");
   background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: bottom;
-  background-size: 80%;
+  background-size: cover;
+  background-position: right;
 }
 .background_seller2 {
   background-image: url("./assets/images/sellerhompageimg2.png");
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: contain;
+  background-position: left;
   background-position-y: bottom;
 }
+.background_seller {
+  background-image: url("./assets/images/seller.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: inherit;
+}
+
 #inputID::placeholder {
   color: #BA9BCB;
   opacity: 1;

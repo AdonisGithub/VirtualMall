@@ -13,14 +13,15 @@ const HomePage = () => {
   return (
     <div className="flex">
       <Header/>
-      <div className="min-h-screen flex md:flex background1 w-full relative">
-        <div className="min-h-screen background_cover h-full w-full flex items-center">
+      <div className="min-h-screen flex md:flex background_home w-full relative">
+        <div className=" background_cover "></div>
+        <div className="min-h-screen h-full w-full flex items-center">
           <div className="w-full py-2 text-white">
-            <div className="w-[300px] 2xl:w-[530px]  ml-[15%]">
-              <div className="w-full text-[46px] 2xl:text-[80px] leading-tight font-medium font-sans tracking-wide mb-6">
+            <div className="w-[229px] lg:w-[300px] 2xl:w-[530px] ml-[5%] xs:ml-[15%] max-w-[95%] xs:max-w-[85%]">
+              <div className="w-full text-[46px] 2xl:text-[80px] leading-tight font-bold font-sans tracking-wide mb-[31px]">
                 Wellcome To The Future Of Shopping.
               </div>
-              <div className="text-[#ffffff94] text-[22px] mb-[60px]">
+              <div className="text-[#ffffff94] text-[12px] 2xl:text-[22px] mb-[59px]">
                 Virtually shop with friends and family like never before
               </div>
               <div className="w-full flex gap-[18px]">
@@ -40,7 +41,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className="absolute right-0 bottom-0 w-full md:w-[451px] bg-white flex  justify-center items-center 2xl:h-[86px] h-12 gap-3">
+        <div className="absolute right-0 bottom-0 w-full md:w-[451px] bg-white flex  justify-center items-center h-[76px] 2xl:h-[86px]  gap-3">
           <div className="w-[180px] h-[27px] ml-0  mt-[29px] mb-[30px]">
             SHARE AND PROMOTE
           </div>
