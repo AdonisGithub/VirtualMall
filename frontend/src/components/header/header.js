@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import HumburgerMenu from "./humburgermenu";
 import {ContactUsModal} from "./ContactUsModal";
@@ -7,13 +7,13 @@ const Header = () => {
   const VendorClick = () => {
       navigate('/sellerhomepage');
   }
-  useEffect(() => {
-    window.onscroll = () => {
-      if (window.scrollY < 20) {
-        document.getElementById("nav").style.top = "0";
-      } else document.getElementById("nav").style.top = "-5rem";
-    };
-  },[]);
+  // useEffect(() => {
+  //   window.onscroll = () => {
+  //     if (window.scrollY < 20) {
+  //       document.getElementById("nav").style.top = "0";
+  //     } else document.getElementById("nav").style.top = "-5rem";
+  //   };
+  // },[]);
   return (
     <nav
         id="nav"

@@ -1,22 +1,24 @@
 import React from "react";
 import PhoneInput from "react-phone-input-2";
+import { Header1 } from "../../components/header1";
 
 const SellerSignupPage = () => {
 
 
   return (
-      <div className="flex background_seller h-screen">
-        <div className="absolute md:mt-[43px] ml-[45%] md:ml-[130px] xl:ml-[159px]">
+    <div>
+      <div className="lg:hidden">
+        <Header1/>
+      </div>
+      <div className="flex background_seller min-h-screen">
+        <div className="flex absolute md:mt-[43px] ml-[45%] md:ml-[130px] xl:ml-[159px]">
           <a href='/' className="hidden md:flex font-bold text-3xl tracking-tight text-black">
             LOGO
           </a>
         </div>
-        <div className="flex w-full md:w-1/2 justify-center items-center mt-[95px] mx-16">
+        <div className="flex w-full md:w-1/2 justify-center items-center  lg:mt-[95px] mx-16">
           <div className="w-full h-full flex items-center justify-center ">
             <div className="">
-              <a href='/'className="flex md:hidden items-center justify-center mb-3  font-bold text-3xl tracking-tight text-black ">
-                LOGO
-              </a>
               <h1 className="text-black  text-2xl mb-3 flex items-center justify-center">
                 Create An Account
               </h1>
@@ -27,7 +29,7 @@ const SellerSignupPage = () => {
                 </a>
               </div>
               <div className="w-full 2xl:w-[369px] lg:w-[320px]  m-auto">
-                <div className="grid grid-cols-2 gap-3">
+                <div className="block lg:grid lg:grid-cols-2 lg:gap-3">
                   <div className="w-full">
                     <h1 className="text-black text-sm">Full Name </h1>
                     <input
@@ -108,6 +110,7 @@ const SellerSignupPage = () => {
           </div>
         </div>
       </div>
+    </div>  
   );
 };
 

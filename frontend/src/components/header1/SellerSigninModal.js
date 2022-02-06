@@ -13,7 +13,7 @@ const SellerSigninModal=() => {
 
   return (
     <div className="flex">
-      <button className=" w-[150px]  2xl:w-[216px] 2xl:mt-3 h-9 2xl:h-[48px]  flex items-center justify-center border border-transparent hover:border-black text-white hover:text-black bg-[#ff0000] hover:bg-transparent rounded-md"
+      <button className="w-[216px] h-9 2xl:h-[48px]  flex items-center justify-center border border-transparent hover:border-black text-white hover:text-black bg-[#ff0000] hover:bg-transparent rounded-md"
         onClick={openModal}
       >
         Signin
