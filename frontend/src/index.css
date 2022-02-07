@@ -41,31 +41,7 @@ code {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.background_sellercover {
-  background-image: url("./assets/images/back_sellercover.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.background_seller1 {
-  background-image: url("./assets/images/sellerhompageimg1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-}
-.background_seller2 {
-  background-image: url("./assets/images/sellerhompageimg2.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left;
-  background-position-y: bottom;
-}
-.background_seller {
-  background-image: url("./assets/images/seller.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: inherit;
-}
+
 
 #inputID::placeholder {
   color: #BA9BCB;

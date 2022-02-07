@@ -15,6 +15,7 @@ import { WellcomeEmailPage } from './page/WellcomeEmailPage/WellcomEmailPage';
 import { ForgottenPasswordEmailAfter1Page } from './page/ForgottenPasswordEmailAfter1/ForgottenPasswordEmailAfter1Page';
 import { SellerSignupCongratuationsPage } from './page/SellerSignupCongratualtionsPage';
 import { SellermobileLoginPage } from './page/SellermobileLoginPage';
+import { VirtualmalPage } from './page/VirtualmalPage';
 import Example from "./page/exersise";
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route exact path="/forgottenpasswordemailafter1" element={<ForgottenPasswordEmailAfter1Page/>} />
           <Route exact path="/sellersignupcongratulations" element={<SellerSignupCongratuationsPage/>} />
           <Route exact path="/sellermobilelogin" element={<SellermobileLoginPage/>} />
+          <Route exact path="/virtualmal" element={<VirtualmalPage/>} />
           <Route exact path="/exersise" element={<Example />} />
         </Routes>
         <Footer />

@@ -5,7 +5,7 @@ const ResetPasswordPage = () => {
 
   return (
     <div className="min-h-screen background2">
-      <div className="background_cover ">
+      <div className="bg-[#1B0C4B] bg-opacity-80">
         <div className=" min-h-screen flex">
           <div className="absolute md:mt-[43px] ml-[45%] md:ml-[130px] xl:ml-[159px]">
               <a href='/'className="hidden md:flex font-bold text-3xl tracking-tight text-white">

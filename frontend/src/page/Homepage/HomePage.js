@@ -14,7 +14,7 @@ const HomePage = () => {
     <div className="flex">
       <Header/>
       <div className="min-h-screen flex md:flex background_home w-full relative">
-        <div className=" background_cover w-full">        
+        <div className=" bg-[#1B0C4B] bg-opacity-80 w-full">        
           <div className="min-h-screen h-full w-full flex items-center">
             <div className="w-full py-2 text-white">
               <div className="w-[229px] lg:w-[300px] 2xl:w-[530px] ml-[5%] xs:ml-[15%] max-w-[95%] xs:max-w-[85%]">

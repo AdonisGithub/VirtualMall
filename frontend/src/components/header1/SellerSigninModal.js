@@ -82,7 +82,7 @@ const SellerSigninModal=() => {
                   </div>
                   <div className="w-full flex justify-center mt-2 xl:mt-3 2xl:mt-5">
                     <button
-                      className=" flex w-full h-[34px] mt-5 items-center justify-center text-white text-base border border-transparent hover:border-gray-200 bg-[#ff0000] hover:bg-transparent rounded-md"
+                      className=" flex w-full h-[34px] mt-5 items-center justify-center text-white hover:text-black text-base border border-transparent hover:border-black bg-[#ff0000] hover:bg-transparent rounded-md"
                     >
                       Login
                     </button>

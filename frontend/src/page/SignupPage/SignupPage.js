@@ -1,11 +1,14 @@
-import React, { useState} from "react";
+import React, {useState} from "react";
 import { useDispatch} from "react-redux";
 import * as Actions from "../../_actions";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import {Toast} from "../../components/common/ToastAlert";
+import { useNavigate } from "react-router-dom";
 
-const SignupPage = () => {
+
+const SignupPage = (props) => {
+  const navigate = useNavigate();
   const [user, setUser] = useState({
     fullName: "",
     lastName: "",
@@ -38,13 +41,13 @@ const SignupPage = () => {
         password: user.password,
         phoneNumber: phoneNumber,
       };
-      dispatch(Actions.register(registeruserdata));
+      dispatch(Actions.register(registeruserdata, navigate));
     }
   };
   return (
     <div className=" background2 min-h-screen">
-      <div className=" background_cover">
-        <div className="flex ">
+      <div className=" bg-[#1B0C4B] bg-opacity-80">
+        <div className="flex">
           <div className="absolute md:mt-[43px] ml-[45%] md:ml-[130px] xl:ml-[159px]">
             <a href='/' className="hidden md:flex font-bold text-3xl tracking-tight text-white">
               LOGO

@@ -1,5 +1,6 @@
 import React, { useState} from "react";
 import { useDispatch} from "react-redux";
+import { useNavigate } from "react-router-dom";
 import * as Actions from "../../_actions";
 //import "react-phone-input-2/lib/style.css";
 //import { Toast } from "../../components/common/ToastAlert";
@@ -15,7 +16,7 @@ const LoginPage = () => {
     setUser((user) => ({ ...user, [name]: value }));
   };
   const dispatch = useDispatch();
-
+  const navigate = useNavigate();
   const handleLogin = (e) => {
     e.preventDefault();
     setSubmitted(true);
@@ -24,13 +25,13 @@ const LoginPage = () => {
         NameOrEmail: user.NameOrEmail,
         password: user.password,
       };
-      dispatch(Actions.login(logindata));
+      dispatch(Actions.login(logindata, navigate));
     }
   };
 
   return (
     <div className="min-h-screen background2">
-      <div className="background_cover">
+      <div className="bg-[#1B0C4B] bg-opacity-80">
         <div className=" min-h-screen  flex opacity-100">
           <div className="absolute md:mt-[43px] ml-[45%] md:ml-[130px] xl:ml-[159px]">
             <a href='/' className="hidden md:flex font-bold text-3xl tracking-tight text-white">
